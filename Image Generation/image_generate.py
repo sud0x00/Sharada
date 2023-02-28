@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 # Open the text file and read each line
-with open("input_dev.txt", "r" , encoding='utf-8') as f:
+with open("sharada.txt", "r" , encoding='utf-8') as f:
     lines = f.readlines()
 
 print(lines)
@@ -9,7 +9,7 @@ print(lines)
 image_width = 500
 image_height = 500
 
-font = ImageFont.truetype('NotoSerifDevanagari.ttf', 120 , layout_engine=ImageFont.LAYOUT_RAQM)
+font = ImageFont.truetype('NotoSansSharada.ttf', 120 , layout_engine=ImageFont.LAYOUT_RAQM)
 
 # Loop through each line and create an image for each one
 for index, line in enumerate(lines):
